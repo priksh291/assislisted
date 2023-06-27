@@ -7,12 +7,12 @@ import design from './login/design';
 import React, { useEffect, useState } from 'react'
 import { Router, useRouter } from 'next/router';
 
-import {AiOutlineSetting,AiOutlinePieChart,AiOutlineLike,AiOutlineSearch} from 'react-icons/Ai'
-import {BiUserCircle} from 'react-icons/Bi'
+import {AiOutlineSetting,AiOutlinePieChart,AiOutlineLike,AiOutlineSearch} from 'react-icons/ai'
+import {BiUserCircle,BiPurchaseTagAlt} from 'react-icons/bi'
 import {TbCalendarTime} from 'react-icons/Tb'
-import {BiPurchaseTagAlt} from 'react-icons/Bi'
-import {BsHouseDown,BsBell} from 'react-icons/Bs'
-import {LuUsers} from 'react-icons/Lu'
+
+import {BsHouseDown,BsBell} from 'react-icons/bs'
+import {LuUsers} from 'react-icons/lu'
 
 
 
