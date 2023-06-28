@@ -46,7 +46,7 @@ const Login = () => {
     if(session?.status ==="authenticated"){
         return (
           
-          <div className="relative bg-background w-full sm:h-screen overflow-hidden text-left text-sm text-black h-[1500px]">
+          <div className="relative bg-background w-full sm:h-[1024px] overflow-hidden text-left text-sm text-black h-[1500px]">
 
       {/* <div className="absolute top-[0px] left-[0px] bg-black w-10  sm:h-[1024px] flex justify-center items-center" /> */}
 
