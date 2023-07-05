@@ -496,13 +496,13 @@ const Login = () => {
     // check
 
     <div className="relative w-full h-[1024px] overflow-hidden text-left text-base text-black ">
-      <div className="absolute top-[0px] left-[588px] bg-background w-[930px] h-[1024px] font-Montserrat" />
+      <div className="absolute top-[0px] left-[588px] bg-background w-[930px] h-[1000px] font-Montserrat" />
       <div className="absolute top-[0px] left-[0px] bg-black w-[588px] h-[94px] sm:h-[1024px] flex justify-center items-center" />
       <b className="absolute text-[50px] top-10 sm:text-[72px] sm:top-[464px] sm:left-[171px] text-white">
         Board.
       </b>
       {/* text-[24px] sm:text-[72px] text-white absolute inset-0 flex items-center justify-center */}
-      <div className="absolute top-[409px] left-[832px] w-[385px] h-[356px] font-Lato">
+      <div className="absolute top-[320px] left-[832px] w-[385px] h-[356px] font-Lato">
         <div className="absolute top-[0px] left-[0px] w-[385px] h-[317px]">
           <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] rounded-xl bg-white" />
         </div>
@@ -531,7 +531,7 @@ const Login = () => {
           <span className="text-link cursor-pointer">Register here</span>
         </div>
       </div>
-      <div className="absolute top-[354px] left-[832px] w-[180px] h-[30px] text-center text-xs text-secondary-text font-Montserrat">
+      <div className="absolute top-[270px] left-[832px] w-[180px] h-[30px] text-center text-xs text-secondary-text font-Montserrat">
         <div className="absolute top-[0px] left-[0px] w-[180px] h-[30px]">
 
           <button className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] rounded-3xs bg-white cursor-pointer font-Montserrat" onClick={()=>signIn("google")}>
@@ -548,7 +548,7 @@ const Login = () => {
           onClick={()=>signIn("google")}
         />
       </div>
-      <div className="absolute top-[354px] left-[1037px] w-[180px] h-[30px] text-center text-xs text-secondary-text">
+      <div className="absolute top-[270px] left-[1037px] w-[180px] h-[30px] text-center text-xs text-secondary-text">
         <button className='absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] rounded-3xs bg-white cursor-pointer'>Sign in with Apple</button>
         
         <Image
@@ -559,8 +559,8 @@ const Login = () => {
           width={100}
         />
       </div>
-      <b className="absolute top-[260px] left-[832px] text-17xl font-Montserrat">Sign In</b>
-      <div className="absolute top-[309px] left-[832px] font-Lato">
+      <b className="absolute top-[180px] left-[832px] text-17xl font-Montserrat">Sign In</b>
+      <div className="absolute top-[230px] left-[832px] font-Lato">
         Sign in to your account
       </div>
 
@@ -594,56 +594,46 @@ const Login = () => {
       <span className="text-link cursor-pointer">Register here</span>
     </div>
     <div className="mt-[30px] text-center text-secondary-text font-Montserrat">
-      <button className="w-full px-[15px] py-[12px] bg-white rounded-3xs cursor-pointer">
-        Sign in with Google
-      </button>
-      <Image
-        className="w-[11.5px] h-[11.5px] mt-[10px] mx-auto cursor-pointer"
-        alt=""
-        src="/google-icon.png"
-        height={100}
-        width={100}
-        onClick={() => signIn('google')}
-      />
-    </div>
+  <div className="flex items-center justify-center">
+    <Image
+      className="w-[11.5px] h-[11.5px] mt-[10px] cursor-pointer"
+      alt=""
+      src="/google-icon.png"
+      height={100}
+      width={100}
+      onClick={() => signIn('google')}
+    />
+    <button className="bg-white pt-3 rounded-3xs cursor-pointer" onClick={() => signIn('google')}>
+      Sign in with Google
+    </button>
+  </div>
+</div>
     <div className="mt-[20px] text-center text-secondary-text font-Montserrat">
-      <button className="w-full px-[15px] py-[12px] bg-white rounded-3xs cursor-pointer">
-        Sign in with Apple
-      </button>
-      <Image
-        className="w-[11.5px] h-[11.5px] mt-[10px] mx-auto"
-        alt=""
-        src="/apple.png"
-        height={100}
-        width={100}
-      />
-    </div>
+  <div className="flex items-center justify-center">
+    <Image
+      className="w-[11.5px] h-[11.5px] mt-[10px]"
+      alt=""
+      src="/apple.png"
+      height={100}
+      width={100}
+    />
+    <button className=" pt-3 bg-white rounded-3xs cursor-pointer">
+      Sign in with Apple
+    </button>
+  </div>
+</div>
   </div>
 
   {/* Tablet and larger screens layout */}
-  <div className="hidden sm:block absolute top-[354px] left-[832px]">
+  <div className="hidden sm:block absolute top-[270px] left-[832px]">
     <div className="w-[180px] h-[30px] text-center text-xs text-secondary-text font-Montserrat">
       <button className="w-full h-full rounded-3xs bg-white cursor-pointer" onClick={() => signIn('google')}>
         Sign in with Google
       </button>
-      {/* <Image
-        className="absolute top-[7px] left-[24px] w-[11.5px] h-[11.5px] overflow-hidden z-10"
-        alt=""
-        src="/google-icon.png"
-        height={100}
-        width={100}
-        onClick={() => signIn('google')}
-      /> */}
+      
     </div>
     <div className="mt-[20px] w-[180px] h-[30px] text-center text-xs text-secondary-text">
-      <button className="w-full h-full rounded-3xs bg-white cursor-pointer">Sign in with Apple</button>
-      {/* <Image
-        className="absolute top-[7px] left-[24px] w-[11.5px] h-[11.5px] overflow-hidden z-10"
-        alt=""
-        src="/apple.png"
-        height={100}
-        width={100}
-      /> */}
+      
     </div>
     </div>
     </div>
