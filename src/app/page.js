@@ -495,9 +495,9 @@ const Login = () => {
 
     // check
 
-    <div className="relative w-full h-[1024px] overflow-hidden text-left text-base text-black ">
+    <div className="relative w-full h-[1000px] overflow-hidden text-left text-base text-black ">
       <div className="absolute top-[0px] left-[588px] bg-background w-[930px] h-[1000px] font-Montserrat" />
-      <div className="absolute top-[0px] left-[0px] bg-black w-[588px] h-[94px] sm:h-[1024px] flex justify-center items-center" />
+      <div className="absolute top-[0px] left-[0px] bg-black w-[588px] h-[94px] sm:h-[1000px] flex justify-center items-center" />
       <b className="absolute text-[50px] top-10 sm:text-[72px] sm:top-[464px] sm:left-[171px] text-white">
         Board.
       </b>
